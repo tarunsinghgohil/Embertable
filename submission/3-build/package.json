@@ -1,0 +1,11 @@
+{
+  "name": "ember-table-front-desk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local AI front desk stub: booking-change requests, manager approval, notification log",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js"
+  }
+}

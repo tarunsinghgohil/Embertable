@@ -1,0 +1,102 @@
+{
+  "_provenance": "Fictional data authored 2026-10-26; inert marker, no credential",
+  "tenants": [
+    {
+      "id": "A",
+      "name": "Ember Table"
+    },
+    {
+      "id": "B",
+      "name": "Cedar Cafe"
+    }
+  ],
+  "locations": [
+    {
+      "id": "A1",
+      "tenant": "A",
+      "zone": "Asia/Kolkata"
+    },
+    {
+      "id": "A2",
+      "tenant": "A",
+      "zone": "America/New_York"
+    },
+    {
+      "id": "A3",
+      "tenant": "A",
+      "zone": "Europe/London"
+    },
+    {
+      "id": "B1",
+      "tenant": "B",
+      "zone": "Asia/Kolkata"
+    }
+  ],
+  "users": [
+    {
+      "id": "staff-a",
+      "tenant": "A",
+      "role": "staff",
+      "locations": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "id": "manager-a1",
+      "tenant": "A",
+      "role": "manager",
+      "locations": [
+        "A1"
+      ],
+      "notification_enabled": true
+    },
+    {
+      "id": "manager-a2",
+      "tenant": "A",
+      "role": "manager",
+      "locations": [
+        "A2"
+      ],
+      "notification_enabled": false
+    },
+    {
+      "id": "manager-a3",
+      "tenant": "A",
+      "role": "manager",
+      "locations": [
+        "A3"
+      ],
+      "notification_enabled": true
+    },
+    {
+      "id": "manager-b",
+      "tenant": "B",
+      "role": "manager",
+      "locations": [
+        "B1"
+      ],
+      "notification_enabled": true
+    }
+  ],
+  "legacy_alert_targets": [
+    "manager-a1",
+    "manager-b"
+  ],
+  "config": {
+    "API_KEY": "INERT_PLACEHOLDER_NOT_A_CREDENTIAL",
+    "notification_mode": "local_stub"
+  },
+  "requests": [
+    {
+      "id": "A-101",
+      "tenant": "A",
+      "location": "A2",
+      "requester": "staff-a",
+      "status": "pending",
+      "local_time": "2026-11-01 01:30",
+      "zone": "America/New_York",
+      "offset": null
+    }
+  ]
+}
