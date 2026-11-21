@@ -6,7 +6,7 @@ Ask the client who, if anyone, may see a group-wide overview; until answered, ma
 
 ## Choices and evidence
 
-I chose a small in-memory Node service because the brief requires a local thin slice and deterministic fixture tests. The test-only identity header is deliberately documented as non-production. Time resolution uses `Intl.DateTimeFormat` against the location zone and rejects DST ambiguity. Tests in `3-build/ember-table-front-desk/test/requirements.test.js` demonstrate the required permission/time/retry behavior. The supplied PR was reviewed rather than “fixed,” because Part 4 asks for a merge decision, not an implementation.
+I chose a small in-memory Node service because the brief requires a local thin slice and deterministic fixture tests. The test-only identity header is deliberately documented as non-production. Time resolution uses `Intl.DateTimeFormat` against the location zone and rejects DST ambiguity. Tests in `submission/3-build/tests/requirements.test.js` demonstrate the required permission/time/retry behavior. The supplied PR was reviewed rather than “fixed,” because Part 4 asks for a merge decision, not an implementation.
 
 ## Options rejected
 

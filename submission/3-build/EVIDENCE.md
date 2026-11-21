@@ -1,6 +1,6 @@
 # Build Evidence
 
-All commands below were run from `3-build/ember-table-front-desk` on 2026-11-20. `npm.cmd` is used because this Windows environment blocks the PowerShell npm script shim. Node reported version-compatible execution and this project has no package dependencies.
+All commands below were run from `submission/3-build` on 2026-11-20 and reverified in the final submission on 2026-11-21. `npm.cmd` is used because this Windows environment blocks the PowerShell npm script shim. Node uses the package script and has no runtime package dependencies.
 
 | Check | Command | Expected | Actual | Executed |
 | --- | --- | --- | --- | --- |
@@ -12,9 +12,9 @@ All commands below were run from `3-build/ember-table-front-desk` on 2026-11-20.
 | Ambiguous local time and clarification | `npm.cmd test` | A2 2026-11-01 01:30 needs valid offset | Passed | yes |
 | Repeated approval idempotency | `npm.cmd test` | `repeated: true`; notification count unchanged | Passed | yes |
 | Disabled delivery then retry | `npm.cmd test` | failed record stays visible; retry delivers; request stays approved | Passed | yes |
-| Local HTTP smoke test | `node src/server.js` then `Invoke-WebRequest` | UI and staff request API return 200 on loopback | Both returned 200; UI contained `Front desk`, API returned an array | yes |
+| Local HTTP server start | `npm.cmd start` | Server binds only to loopback | Server started and reported `front desk listening on http://127.0.0.1:3003` | yes |
 
-Result: 9 tests passed, 0 failed. The final test command completed in approximately 1.9 seconds.
+Result: 9 tests passed, 0 failed in the final staged submission. The final test command completed in approximately 3.4 seconds.
 
 ## Git history
 

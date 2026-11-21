@@ -8,7 +8,7 @@ This is a local-only submission for the fictional Ember Table front-desk exercis
 ## Run the thin slice
 
 ```powershell
-cd 3-build/ember-table-front-desk
+cd submission/3-build
 npm.cmd test
 npm.cmd start
 ```
